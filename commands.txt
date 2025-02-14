@@ -1,0 +1,21 @@
+Working models:
+1. ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8:
+Training:
+python object_detection/model_main_tf2.py --pipeline_config_path="C:\TF Model\ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8\pipeline.config" --model_dir="C:/TF Model/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/train"
+
+Evaluation:
+python object_detection/model_main_tf2.py --pipeline_config_path="C:/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/pipeline.config" --model_dir="C:/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/eval" --checkpoint_dir= "C:/ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8/train/" --alsologtostderr --eval_timeout=0
+
+Save the model:
+python object_detection/exporter_main_v2.py --input_type=image_tensor --pipeline_config_path "C:\TF Model\ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8\pipeline.config" --trained_checkpoint_dir "C:\TF Model\ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8\train" --output_directory "C:\TF Model\ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8\exported_model"
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+2. ssd_mobilenet_v2_320x320_coco17_tpu-8
+Training:
+python object_detection/model_main_tf2.py --pipeline_config_path="C:\TF Model\ssd_mobilenet_v2_320x320_coco17_tpu-8\pipeline.config" --model_dir="C:\TF Model\ssd_mobilenet_v2_320x320_coco17_tpu-8\train"
+
+Evaluation:
+python object_detection/model_main_tf2.py --pipeline_config_path="C:\TF Model\ssd_mobilenet_v2_320x320_coco17_tpu-8\pipeline.config" --model_dir="C:\TF Model\ssd_mobilenet_v2_320x320_coco17_tpu-8/eval" --checkpoint_dir= "C:\TF Model\ssd_mobilenet_v2_320x320_coco17_tpu-8/train/" --alsologtostderr --eval_timeout=0
+
+Save the model:
+python object_detection/exporter_main_v2.py --input_type=image_tensor --pipeline_config_path "C:\TF Model\ssd_mobilenet_v2_320x320_coco17_tpu-8\pipeline.config" --trained_checkpoint_dir "C:\TF Model\ssd_mobilenet_v2_320x320_coco17_tpu-8\train" --output_directory "C:\TF Model\ssd_mobilenet_v2_320x320_coco17_tpu-8\exported_model"
