@@ -19,6 +19,9 @@ This project is not an original work. This is an implementation work from <a hre
 4. Unzip the models into `./models/(unzip here)`.
 5. (In case you wants to fine-tune the model) Unzip the nvmm folder into the *cloned tensorflow object detection* folder: `./models/research/(unzip here)`.
 
+## Malaysian Traffic Sign Dataset Preperation
+The original source of our MTSD dataset is from <a href="https://universe.roboflow.com/malaysia-road-sign/malaysia-road-sign-dataset/dataset/1">roboflow</a>. For the sack of simplicity, we only extracted 2100 images. If you wish to train on more data, we provided the code to extract the images <a href="/scripts/extract_dataset.ipynb">here</a>. 
+
 ## Installation Steps
 <b>Installation Steps for Object Detection API for TF2</b>
 
@@ -62,7 +65,7 @@ pip install tensorflow-gpu==2.10.0
 3. Open command prompt and type in the commands from <a href="commands.txt"> commands.txt</a>. Be sure to change the filepath of `--pipeline_config_path`, `--model_dir`, `--checkpoint_dir`, `--trained_checkpoint_dir` and `--output_directory` in the commands.txt.
 
 ## Evaluation
-1. Run the <a href="scripts/run_inference.py">inference</a> python file to create Inference Model. Then head to <a href="Evaluation.ipynb">evaluation</a> to evaluate the model.
+Run the <a href="scripts/run_inference.py">inference</a> python file to create Inference Model. Then head to <a href="Evaluation.ipynb">evaluation</a> to evaluate the model.
 
 ## Acknowledgements
 The source code of this project is mainly based on <a href="https://github.com/tensorflow/models/tree/master/research/object_detection">Tensorflow Object Detection API </a> and the research paper: <a href="https://www.sciencedirect.com/science/article/abs/pii/S092523121830924X?via%3Dihub">Evaluation of deep neural networks for traffic sign detection systems</a>.
