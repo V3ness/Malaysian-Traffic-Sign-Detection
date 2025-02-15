@@ -29,7 +29,7 @@ for _, row in gt_data.iterrows():
     ground_truths[filename]['gt_bboxes'].append(bbox)
     ground_truths[filename]['gt_classes'].append(class_name)
 
-MODEL_NAME = 'ssd_mobilenet_v2_320x320_coco17_tpu-8\exported_model' # change the model here
+MODEL_NAME = 'ssd_mobilenet_v2_fpnlite_320x320_coco17_tpu-8\exported_model' # change the model here
 
 # Define model path
 MODEL_PATH = os.path.join('models', MODEL_NAME)

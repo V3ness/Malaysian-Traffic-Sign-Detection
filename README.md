@@ -63,6 +63,7 @@ pip install tensorflow-gpu==2.10.0
 ```
 2. Modify the `pipeline.config` file in the `./models/ssd.../pipeline.config` to suit your dataset and requirements.
 3. Open command prompt and type in the commands from <a href="commands.txt"> commands.txt</a>. Be sure to change the filepath of `--pipeline_config_path`, `--model_dir`, `--checkpoint_dir`, `--trained_checkpoint_dir` and `--output_directory` in the commands.txt.
+> Additionally, you can download different pre-trained model from <a href="https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/tf2_detection_zoo.md">Tensorflow 2 Detection Model Zoo</a>.
 
 ## Evaluation
 Run the <a href="scripts/run_inference.py">inference</a> python file to create Inference Model. Then head to <a href="Evaluation.ipynb">evaluation</a> to evaluate the model.
