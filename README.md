@@ -14,7 +14,7 @@ This project is not an original work. This is an implementation work from <a hre
 
 ## Prerequisite
 1. Make sure <a href="https://docs.anaconda.com/anaconda/install/">Anaconda</a> is installed.
-2. Head over to this <a href="https://drive.google.com/drive/folders/14XZOY5WXXT9TOM_oIbsj7Qd92L1Os-5g"> g.drive link </a> to download the dataset, pre-trained models and nvvm folder.
+2. Head over to this <i> link </i> to download the dataset, pre-trained models and nvvm folder.
 3. Unzip the dataset into `./mtsd_data/(unzip here)`.
 4. Unzip the models into `./models/(unzip here)`.
 5. (In case you wants to fine-tune the model) Unzip the nvmm folder into the *cloned tensorflow object detection* folder: `./models/research/(unzip here)`.
